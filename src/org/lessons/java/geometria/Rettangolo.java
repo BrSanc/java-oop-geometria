@@ -33,13 +33,4 @@ public class Rettangolo {
         return  perimetro;
     }
 
-
-
-
-
-
-
-
-
-
 }
