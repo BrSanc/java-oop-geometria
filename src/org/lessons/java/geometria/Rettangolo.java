@@ -21,6 +21,11 @@ public class Rettangolo {
         this.heigh = heigh;
     }
 
+    Rettangolo(){
+        base= 1;
+        heigh= 1;
+    }
+
     //---------------------------Metodi------------------------
 
     int calcolaArea(){
@@ -31,6 +36,25 @@ public class Rettangolo {
     int calcolaPerimetro(){
         int perimetro = (base*2) + (heigh*2);
         return  perimetro;
+    }
+
+    void draw(char marker){
+        for (int i = 0; i < base; i++) {
+            System.out.print(marker);
+        }
+        System.out.println();
+
+        for (int i = 0; i < heigh - 2; i++) {
+            System.out.print(marker);
+            for (int j = 0; j < base - 2; j++) {
+                System.out.print(" ");
+            }
+            System.out.println(marker);
+        }
+
+        for (int i = 0; i < base; i++) {
+            System.out.print(marker);
+        }
     }
 
 }

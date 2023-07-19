@@ -19,14 +19,18 @@ public class Main {
         System.out.println("Heigh: ");
         int heighInput = scan.nextInt();
 
-        Rettangolo rettangolo = new Rettangolo(baseInput,heighInput);
+        Rettangolo rettangolo1 = new Rettangolo(baseInput,heighInput);
+        Rettangolo rettangolo2 = new Rettangolo();
+
 
         System.out.println("Base: " + baseInput + "cm");
         System.out.println("Heigh: " + heighInput + "cm");
-        System.out.println("Perimetro: " + rettangolo.calcolaPerimetro() + "cm");
-        System.out.println("Area: " + rettangolo.calcolaArea() + "cm²");
+        System.out.println("Perimetro: " + rettangolo1.calcolaPerimetro() + "cm");
+        System.out.println("Area: " + rettangolo1.calcolaArea() + "cm²");
 
+        System.out.println(rettangolo2.toString());
 
+        rettangolo1.draw('&');
 
 
 
